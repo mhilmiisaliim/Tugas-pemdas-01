@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Soal ENERGI"/>
+        <attribute name="authors" value="LOQ"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-14 11:11:51 AM"/>
+        <attribute name="created" value="TE9RO0xBUFRPUC1MSjUwTU9JOTsyMDI1LTA5LTE0OzEwOjM0OjE4IEFNOzI1NTE="/>
+        <attribute name="edited" value="TE9RO0xBUFRPUC1MSjUwTU9JOTsyMDI1LTA5LTE0OzExOjExOjUxIEFNOzE7MjY1Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Ep, m, g, h, Ek, Em, V" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukkan Nilai Massa:&quot;" newline="True"/>
+            <input variable="m"/>
+            <output expression="&quot;Masukkan Nilai Grafitasi:&quot;" newline="True"/>
+            <input variable="g"/>
+            <output expression="&quot;Masukkan Nilai Ketinggian: &quot;" newline="True"/>
+            <input variable="h"/>
+            <output expression="&quot;Masukkan Nilai Kecepatan: &quot;" newline="True"/>
+            <input variable="V"/>
+            <assign variable="Ep" expression="m*g*h"/>
+            <assign variable="Ek" expression="(m*V*V)/2"/>
+            <assign variable="Em" expression="Ep+Ek"/>
+            <output expression="&quot;Hasil Energi Potensial = &quot; &amp;EP" newline="True"/>
+            <output expression="&quot;Hasil Energi Kinetik = &quot; &amp;Ek" newline="True"/>
+            <output expression="&quot;hasil Energi Mekanik =&quot; &amp;Em" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
